@@ -1,0 +1,69 @@
+== Präsentation ==
+Dieses Plugin ermöglicht es Ihnen die IPX800 V2 -Karte von GCE-Electronics zu verwalten.
+
+Ursprünglich ist dieses Plugin entstanden, um sich mit der IPX800 V2 GCE zu verbinden.
+
+=== Ersichtliche Daten auf dem Armaturenbrett : ===
+* ''Die Analogeingänge''
+* ''Die Digitaleingänge''
+* ''Die Relais''
+* '''Der Impulszähler''''
+
+=== Aktualisierungsrate  ===
+Die Daten werden vom Plugin jede Minute gesammelt. Es ist nicht möglich, eine höhere Frequenz zu haben.
+
+== Installation/Einrichtung ==
+Wir werden jetzt ein Gerät einrichten. Um dort hin zu kommen, klicken Sie auf '''Plugins /  Automatisierungsprotokolle / IPX800 V2 '''.
+
+Dann auf die Schaltfläche oben links "Gerät hinzufügen" klicken
+
+Puis saisir le nom de l'équipement (ex. IPX 1)
+
+Dann definieren Sie :
+
+* '''Eltern-Objekt'''
+* ""Kategorie "'(optional)
+* '''Aktivieren''' (ankreuzen, andernfalls wird das Gerät nicht nutzbar sein)
+* '''Sichtbar''' (optional, wenn Sie nicht wünschen, dass es auf dem Armaturenbrett sichtbar ist)
+* '''IP Adresse'''
+* '''Port'''
+* '''Konto'''
+* '''Passwort'''
+
+Alle Elemente der Karte finden Sie im Menü auf der linken Seite, durch Klicken auf dieses Symbol.  
+
+== Comportement avec l'application mobile ==
+Par defaut, voici le comportement :
+
+* ''IP800V2''
+
+Les commandes sont toutes paramétrées.
+
+* ''Die Analogeingänge''
+
+Les commandes sont toutes par defaut visible et le type dépend de la sonde choisi.
+
+* ''Die Digitaleingänge''
+
+Les commandes sont considérées comme des lumières.
+
+* ''Die Relais''
+
+Les commandes sont considérées comme des lumières.
+
+* ''Die Impulszähler''
+
+Les commandes sont considérées comme des types génériques.
+
+Il faut noter que l'on retrouvera dans l'application les commandes à partir du moment où elles sont paramétrées, même si elles ne sont pas marquées comme visible. Pour les masquer, il faut choisir dasn "Configuration commande" => "Type générique" => "Ne pas tenir compte de cette commande".
+
+== Einige Kopien von Bildschirm ==
+image::../images/ipx800v2_screenshot1.jpg[align="center"]
+image::../images/ipx800v2_screenshot2.jpg[align="center"]
+image::../images/ipx800v2_screenshot3.jpg[align="center"]
+
+=== FAQ
+include::faq.asciidoc[]
+
+== Fehlersuche ==
+include::changelog.asciidoc[]

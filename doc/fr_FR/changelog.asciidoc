@@ -1,0 +1,24 @@
+WARNING: Detail complet des mises à jour sur https://github.com/guenneguezt/plugin-ipx800v2/commits/master[Historique Commit]
+
+Liste des évolutions majeures de la version courante :
+
+- Suppression du lien Paypal pour être conforme avec Jeedom V3.1
+
+Anciennes évolutions :
+
+- Modification pour compatibilité Jeedom V3
+- Plus de suivi de version
+- Continue la collecte lorsque une IPX est HS.
+- Trappe certains messages d'erreur.
+- Ajout du type LIGHT_TOGGL pour les relais.
+- Définition template des relais boutons.
+- Mise a jour des entrées analogiques, même si la valeur ne change pas pour les graphiques.
+- Compatibilité Jeedom 2.0
+- Modification de l'extension du logo.
+- Compatibilité Imperihome
+- Retrait de la suppression des équipements lors de la désactivation du plugin
+- Correction par rapport au nouveau core.
+- Mise en place de collecte plus fréquente
+- Inversion des indices des btns
+- Ajout de Correction automatique par rapport au seuil Min et Max
+- Initialisation sur la base du plugin ipx800

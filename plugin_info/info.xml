@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>ipx800v2</id>
+    <name>ipx800 V2</name>
+    <description>Plugin pour gerer les cartes ipx800 V2 de GCE</description>
+    <icon>fa fa-sitemap</icon>
+    <licence>AGPL</licence>
+    <author>Thomas Guenneguez</author>
+    <installation></installation>
+    <require>2.0</require>
+    <version>1.07</version>
+    <category>automation protocol</category>
+    <hasOwnDeamon>1</hasOwnDeamon>
+</info>
+

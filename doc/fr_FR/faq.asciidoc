@@ -1,0 +1,25 @@
+[panel,primary]
+.Je n'arrive pas a accéder aux sous indicateurs ?
+--
+Il faut dans le menu gauche cliquer sur l'icône suivant pour y avoir accès : image:../images/acces_sous_indicateur.jpg[la]
+--
+
+.A quelle fréquence les données sont-elles mise à jour ?
+--
+Elles sont mises à jour en fonction de la fréquence paramétré du daemon.
+--
+
+.Ce plugin ne génère pas de log, comment en avoir ?
+--
+Il est nécessaire au préalable d'activer temporairement le debug de Jeedom (menu Configuration => Configuration des logs & messages => Activer + Niveau de log = Debug).
+--
+
+.J'aimerai remonter des erreurs/modifications directement dans le code ?
+--
+C'est tout à fait possible via https://github.com/guenneguezt/plugin-ipx800v2[github]
+--
+
+.Pourquoi le plugin est gratuit ?
+--
+Ce plugin est gratuit pour que chacun puisse en profiter simplement. Si vous souhaitez tout de même faire un don au développeur du plugin, merci de me faire un MP via le forum.
+--
