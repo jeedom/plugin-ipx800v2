@@ -1,8 +1,8 @@
 {
     "plugins\/ipx800v2\/plugin_info\/configuration.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
-        "Temporisation minumum entre deux lectures en secondes": "",
-        "Trop diminuer cette valeur peut rendre instable votre serveur": ""
+        "Temporisation minumum entre deux lectures en secondes": "Retraso mínimo entre dos lecturas en segundos",
+        "Trop diminuer cette valeur peut rendre instable votre serveur": "Disminuir demasiado este valor puede hacer que su servidor sea inestable"
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
@@ -110,7 +110,7 @@
         "Formule standard": "Fórmula estándar",
         "Unite": "Unidad",
         "Min": "Bajo",
-        "Max": "",
+        "Max": "Max",
         "Historiser": "Guardar historial",
         "Afficher": "Mostrar",
         "Inverser": "Invertir",
@@ -128,7 +128,7 @@
     "plugins\/ipx800v2\/core\/class\/ipx800v2.class.php": {
         "Veuillez vérifier la configuration": "Por favor verifique la configuración",
         "Tâche cron introuvable": "Tarea Cron no encontrada",
-        "L\\'ipx800v2 ne repond pas.": "",
+        "L\\'ipx800v2 ne repond pas.": "El ipx800v2 no responde.",
         "L\\'ipx ne repond pas.": "El ipx no responde.",
         "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipo desactivado imposible de ejecutar el comando: '. $ this-> getHumanName ()"
     },
