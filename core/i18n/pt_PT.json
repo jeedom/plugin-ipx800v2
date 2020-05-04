@@ -1,33 +1,33 @@
 {
     "plugins\/ipx800v2\/plugin_info\/configuration.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
-        "Temporisation minumum entre deux lectures en secondes": "",
-        "Trop diminuer cette valeur peut rendre instable votre serveur": ""
+        "Temporisation minumum entre deux lectures en secondes": "Atraso mínimo entre duas leituras em segundos",
+        "Trop diminuer cette valeur peut rendre instable votre serveur": "Diminuir muito esse valor pode tornar seu servidor instável"
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
-        "Ajouter une ipx800v2": "",
-        "Entrée analogique": "",
-        "Relai": "",
-        "Entrée numérique": "",
-        "Compteur": "",
+        "Ajouter une ipx800v2": "Adicionar um ipx800v2",
+        "Entrée analogique": "Entrada analógica",
+        "Relai": "Relé",
+        "Entrée numérique": "Entrada digital",
+        "Compteur": "Contador",
         "Gestion": "Gestão",
         "Configuration": "Configuração",
-        "Mes IPX": "",
-        "Vous n'avez pas encore d'IPX, cliquez sur Ajouter un équipement pour commencer": "",
+        "Mes IPX": "My IPX",
+        "Vous n'avez pas encore d'IPX, cliquez sur Ajouter un équipement pour commencer": "Você ainda não possui um IPX, clique em Adicionar um dispositivo para iniciar",
         "Général": "Geral",
-        "Nom de l'ipx800v2": "",
+        "Nom de l'ipx800v2": "Nome Ipx800v2",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
-        "Accéder à la carte": "",
-        "IP de l'ipx800v2": "",
-        "Port de l'ipx800v2": "",
-        "Compte de l'ipx800v2": "",
-        "Password de l'ipx800v2": "",
-        "Indicateurs": "",
+        "Accéder à la carte": "Acesse o mapa",
+        "IP de l'ipx800v2": "Ipx800v2 ip",
+        "Port de l'ipx800v2": "Usando o ipx800v2",
+        "Compte de l'ipx800v2": "Conta Ipx800v2",
+        "Password de l'ipx800v2": "Senha do ipx800v2",
+        "Indicateurs": "Indicadores",
         "Nom": "Nome",
         "Sous-Type": "Subtipo",
         "Valeur": "Valor",
@@ -36,17 +36,17 @@
         "Supprimer": "Remover",
         "Sauvegarder": "Salvar",
         "Sauvegarde effectuée avec succès": "Backup concluído com êxito",
-        "Utilisez sur l\\'icône suivant pour voir le détail de l\\'élément <i class=\"fa fa-sitemap\"><\/i>": ""
+        "Utilisez sur l\\'icône suivant pour voir le détail de l\\'élément <i class=\"fa fa-sitemap\"><\/i>": "Use no ícone a seguir para ver os detalhes do elemento <i class=\"fa fa-sitemap\"><\/i>"
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_bouton.php": {
         "Général": "Geral",
-        "Nom de l'entrée numérique": "",
+        "Nom de l'entrée numérique": "Nome da entrada digital",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
-        "Indicateurs": "",
+        "Indicateurs": "Indicadores",
         "Nom": "Nome",
         "Sous-Type": "Subtipo",
         "Valeur": "Valor",
@@ -56,14 +56,14 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_compteur.php": {
         "Général": "Geral",
-        "Nom du compteur": "",
-        "Nom de l'entrée numérique": "",
+        "Nom du compteur": "Nome do contador",
+        "Nom de l'entrée numérique": "Nome da entrada digital",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
-        "Indicateurs": "",
+        "Indicateurs": "Indicadores",
         "Nom": "Nome",
         "Sous-Type": "Subtipo",
         "Valeur": "Valor",
@@ -73,13 +73,13 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_relai.php": {
         "Général": "Geral",
-        "Nom du relai": "",
+        "Nom du relai": "Nome do relé",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
-        "Indicateurs": "",
+        "Indicateurs": "Indicadores",
         "Nom": "Nome",
         "Sous-Type": "Subtipo",
         "Valeur": "Valor",
@@ -89,13 +89,13 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_analogique.php": {
         "Général": "Geral",
-        "Nom de l'entrée analogique": "",
+        "Nom de l'entrée analogique": "Nome da entrada analógica",
         "Objet parent": "Objeto pai",
         "Aucun": "Nemhum",
         "Catégorie": "Categoria",
         "Activer": "Ativar",
         "Visible": "Visivél",
-        "Indicateurs": "",
+        "Indicateurs": "Indicadores",
         "Nom": "Nome",
         "Sous-Type": "Subtipo",
         "Valeur": "Valor",
@@ -107,40 +107,40 @@
         "Nom": "Nome",
         "Calcul": "Cálculo",
         "Rechercher équipement": "Equipamentos de pesquisa",
-        "Formule standard": "",
+        "Formule standard": "Fórmula padrão",
         "Unite": "Unidade",
         "Min": "Baixo",
-        "Max": "",
+        "Max": "Máx.",
         "Historiser": "Historicizar",
         "Afficher": "Display",
         "Inverser": "Inverter",
-        "Correction Min\t Auto": "",
-        "Correction Max Auto": "",
-        "Nom information": "",
+        "Correction Min\t Auto": "Correção automática mínima",
+        "Correction Max Auto": "Correção automática máxima",
+        "Nom information": "Informações de nome",
         "Valeur": "Valor",
         "Tester": "Teste",
-        "Accèder à l'interface de l'IPX": ""
+        "Accèder à l'interface de l'IPX": "Acesse a interface IPX"
     },
     "plugins\/ipx800v2\/core\/ajax\/ipx800v2.ajax.php": {
         "401 - Accès non autorisé": "401 - Acesso não autorizado",
         "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2.class.php": {
-        "Veuillez vérifier la configuration": "",
-        "Tâche cron introuvable": "",
-        "L\\'ipx800v2 ne repond pas.": "",
-        "L\\'ipx ne repond pas.": "",
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": ""
+        "Veuillez vérifier la configuration": "Por favor, verifique a configuração",
+        "Tâche cron introuvable": "Tarefa Cron não encontrada",
+        "L\\'ipx800v2 ne repond pas.": "O ipx800v2 não responde.",
+        "L\\'ipx ne repond pas.": "O ipx não responde.",
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipamento desativado impossível de executar o comando: '. $ this-> getHumanName ()"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_relai.class.php": {
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "",
-        "L\\'ipx ne repond pas.": ""
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipamento desativado impossível de executar o comando: '. $ this-> getHumanName ()",
+        "L\\'ipx ne repond pas.": "O ipx não responde."
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_compteur.class.php": {
-        "La formule doit contenir une référecence à #brut#.": ""
+        "La formule doit contenir une référecence à #brut#.": "A fórmula deve conter uma referência a # brut #."
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_bouton.class.php": {
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "",
-        "L\\'ipx ne repond pas.": ""
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipamento desativado impossível de executar o comando: '. $ this-> getHumanName ()",
+        "L\\'ipx ne repond pas.": "O ipx não responde."
     }
 }
