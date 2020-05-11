@@ -123,7 +123,7 @@
     },
     "plugins\/ipx800v2\/core\/ajax\/ipx800v2.ajax.php": {
         "401 - Accès non autorisé": "401 - Akses tidak sah",
-        "Aucune methode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune methode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2.class.php": {
         "Veuillez vérifier la configuration": "",

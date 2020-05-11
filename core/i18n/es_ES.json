@@ -128,19 +128,19 @@
     "plugins\/ipx800v2\/core\/class\/ipx800v2.class.php": {
         "Veuillez vérifier la configuration": "Por favor verifique la configuración",
         "Tâche cron introuvable": "Tarea Cron no encontrada",
-        "L\\'ipx800v2 ne repond pas.": "El ipx800v2 no responde.",
-        "L\\'ipx ne repond pas.": "El ipx no responde.",
+        "L\\'ipx800v2 ne repond pas.": "El ipx800v2 no responde",
+        "L\\'ipx ne repond pas.": "El ipx no responde",
         "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipo desactivado imposible de ejecutar el comando: '. $ this-> getHumanName ()"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_relai.class.php": {
         "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipo desactivado imposible de ejecutar el comando: '. $ this-> getHumanName ()",
-        "L\\'ipx ne repond pas.": "El ipx no responde."
+        "L\\'ipx ne repond pas.": "El ipx no responde"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_compteur.class.php": {
-        "La formule doit contenir une référecence à #brut#.": "La fórmula debe contener una referencia a # brut #."
+        "La formule doit contenir une référecence à #brut#.": "La fórmula debe contener una referencia a # brut #"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_bouton.class.php": {
         "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipo desactivado imposible de ejecutar el comando: '. $ this-> getHumanName ()",
-        "L\\'ipx ne repond pas.": "El ipx no responde."
+        "L\\'ipx ne repond pas.": "El ipx no responde"
     }
 }
