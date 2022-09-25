@@ -1,33 +1,33 @@
 {
     "plugins\/ipx800v2\/plugin_info\/configuration.php": {
         "401 - Accès non autorisé": "401-不正アクセス",
-        "Temporisation minumum entre deux lectures en secondes": "",
-        "Trop diminuer cette valeur peut rendre instable votre serveur": ""
+        "Temporisation minumum entre deux lectures en secondes": "Temporisation minumum entre deux lectures en secondes",
+        "Trop diminuer cette valeur peut rendre instable votre serveur": "Trop diminuer cette valeur peut rendre instable votre serveur"
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2.php": {
         "401 - Accès non autorisé": "401-不正アクセス",
-        "Ajouter une ipx800v2": "",
-        "Entrée analogique": "",
-        "Relai": "",
-        "Entrée numérique": "",
-        "Compteur": "",
+        "Ajouter une ipx800v2": "Ajouter une ipx800v2",
+        "Entrée analogique": "Entrée analogique",
+        "Relai": "Relai",
+        "Entrée numérique": "Entrée numérique",
+        "Compteur": "Compteur",
         "Gestion": "管理",
         "Configuration": "コンフィギュレーション",
-        "Mes IPX": "",
-        "Vous n'avez pas encore d'IPX, cliquez sur Ajouter un équipement pour commencer": "",
+        "Mes IPX": "Mes IPX",
+        "Vous n'avez pas encore d'IPX, cliquez sur Ajouter un équipement pour commencer": "Vous n'avez pas encore d'IPX, cliquez sur Ajouter un équipement pour commencer",
         "Général": "コモン",
-        "Nom de l'ipx800v2": "",
+        "Nom de l'ipx800v2": "Nom de l'ipx800v2",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Accéder à la carte": "",
-        "IP de l'ipx800v2": "",
-        "Port de l'ipx800v2": "",
-        "Compte de l'ipx800v2": "",
-        "Password de l'ipx800v2": "",
-        "Indicateurs": "",
+        "Accéder à la carte": "Accéder à la carte",
+        "IP de l'ipx800v2": "IP de l'ipx800v2",
+        "Port de l'ipx800v2": "Port de l'ipx800v2",
+        "Compte de l'ipx800v2": "Compte de l'ipx800v2",
+        "Password de l'ipx800v2": "Password de l'ipx800v2",
+        "Indicateurs": "Indicateurs",
         "Nom": "表題",
         "Sous-Type": "サブタイプ",
         "Valeur": "値",
@@ -36,17 +36,17 @@
         "Supprimer": "取り除きます",
         "Sauvegarder": "セーブ",
         "Sauvegarde effectuée avec succès": "バックアップが正常に完了",
-        "Utilisez sur l\\'icône suivant pour voir le détail de l\\'élément <i class=\"fa fa-sitemap\"><\/i>": ""
+        "Utilisez sur l\\'icône suivant pour voir le détail de l\\'élément <i class=\"fa fa-sitemap\"><\/i>": "Utilisez sur l\\'icône suivant pour voir le détail de l\\'élément <i class=\"fa fa-sitemap\"><\/i>"
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_bouton.php": {
         "Général": "コモン",
-        "Nom de l'entrée numérique": "",
+        "Nom de l'entrée numérique": "Nom de l'entrée numérique",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Indicateurs": "",
+        "Indicateurs": "Indicateurs",
         "Nom": "表題",
         "Sous-Type": "サブタイプ",
         "Valeur": "値",
@@ -56,14 +56,14 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_compteur.php": {
         "Général": "コモン",
-        "Nom du compteur": "",
-        "Nom de l'entrée numérique": "",
+        "Nom du compteur": "Nom du compteur",
+        "Nom de l'entrée numérique": "Nom de l'entrée numérique",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Indicateurs": "",
+        "Indicateurs": "Indicateurs",
         "Nom": "表題",
         "Sous-Type": "サブタイプ",
         "Valeur": "値",
@@ -73,13 +73,13 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_relai.php": {
         "Général": "コモン",
-        "Nom du relai": "",
+        "Nom du relai": "Nom du relai",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Indicateurs": "",
+        "Indicateurs": "Indicateurs",
         "Nom": "表題",
         "Sous-Type": "サブタイプ",
         "Valeur": "値",
@@ -89,13 +89,13 @@
     },
     "plugins\/ipx800v2\/desktop\/php\/ipx800v2_analogique.php": {
         "Général": "コモン",
-        "Nom de l'entrée analogique": "",
+        "Nom de l'entrée analogique": "Nom de l'entrée analogique",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Indicateurs": "",
+        "Indicateurs": "Indicateurs",
         "Nom": "表題",
         "Sous-Type": "サブタイプ",
         "Valeur": "値",
@@ -107,40 +107,40 @@
         "Nom": "表題",
         "Calcul": "計算",
         "Rechercher équipement": "検索機器",
-        "Formule standard": "",
+        "Formule standard": "Formule standard",
         "Unite": "団結",
         "Min": "低いです",
         "Max": "マックス",
         "Historiser": "Historicize",
         "Afficher": "ディスプレイ",
         "Inverser": "逆",
-        "Correction Min\t Auto": "",
-        "Correction Max Auto": "",
-        "Nom information": "",
+        "Correction Min\t Auto": "Correction Min\t Auto",
+        "Correction Max Auto": "Correction Max Auto",
+        "Nom information": "Nom information",
         "Valeur": "値",
         "Tester": "テスト",
-        "Accèder à l'interface de l'IPX": ""
+        "Accèder à l'interface de l'IPX": "Accèder à l'interface de l'IPX"
     },
     "plugins\/ipx800v2\/core\/ajax\/ipx800v2.ajax.php": {
         "401 - Accès non autorisé": "401-不正アクセス",
         "Aucune methode correspondante à : ": "以下に対応するメソッドはありません："
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2.class.php": {
-        "Veuillez vérifier la configuration": "",
-        "Tâche cron introuvable": "",
-        "L\\'ipx800v2 ne repond pas.": "",
-        "L\\'ipx ne repond pas.": "",
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": ""
+        "Veuillez vérifier la configuration": "Veuillez vérifier la configuration",
+        "Tâche cron introuvable": "Tâche cron introuvable",
+        "L\\'ipx800v2 ne repond pas.": "L\\'ipx800v2 ne repond pas",
+        "L\\'ipx ne repond pas.": "L\\'ipx ne repond pas",
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_relai.class.php": {
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "",
-        "L\\'ipx ne repond pas.": ""
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()",
+        "L\\'ipx ne repond pas.": "L\\'ipx ne repond pas"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_compteur.class.php": {
-        "La formule doit contenir une référecence à #brut#.": ""
+        "La formule doit contenir une référecence à #brut#.": "La formule doit contenir une référecence à #brut#"
     },
     "plugins\/ipx800v2\/core\/class\/ipx800v2_bouton.class.php": {
-        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "",
-        "L\\'ipx ne repond pas.": ""
+        "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()": "Equipement desactivé impossible d\\éxecuter la commande : ' . $this->getHumanName()",
+        "L\\'ipx ne repond pas.": "L\\'ipx ne repond pas"
     }
 }
