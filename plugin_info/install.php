@@ -47,13 +47,11 @@ function ipx800v2_update() {
 		$cron->save();
 		$cron->stop();
 		$cron->start();
-	}
-	else
-	{
+	} else {
 		ipx800v2::deamon_start();
 	}
 	foreach (eqLogic::byType('ipx800v2') as $eqLogic) {
-		$SubeqLogic->setConfiguration('type', 'carte');
+		$eqLogic->setConfiguration('type', 'carte');
 		$eqLogic->save();
 	}
 	foreach (eqLogic::byType('ipx800v2_bouton') as $SubeqLogic) {
@@ -76,8 +74,7 @@ function ipx800v2_update() {
 		$SubeqLogic->setEqType_name('ipx800v2');
 		$SubeqLogic->save();
 	}
-	if ( config::byKey('temporisation_lecture', 'ipx800v2') == "" )
-	{
+	if (config::byKey('temporisation_lecture', 'ipx800v2') == "") {
 		config::save('temporisation_lecture', 60, 'ipx800v2');
 	}
 	config::remove('subClass', 'ipx800v2');
@@ -91,4 +88,3 @@ function ipx800v2_remove() {
 	}
 	config::remove('subClass', 'ipx800v2');
 }
-?>

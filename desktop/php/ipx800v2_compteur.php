@@ -3,17 +3,17 @@
             <fieldset>
                 <legend>
                     <i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}
-				   <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i>
+                    <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i>
                 </legend>
                 <div class="form-group">
                     <label class="col-lg-2 control-label">{{Nom du compteur}}</label>
                     <div class="col-lg-3">
                         <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
-                        <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'entrée numérique}}"/>
+                        <input type="text" class="eqLogicAttr form-control" data-l1key="name" placeholder="{{Nom de l'entrée numérique}}" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-2 control-label" >{{Objet parent}}</label>
+                    <label class="col-lg-2 control-label">{{Objet parent}}</label>
                     <div class="col-lg-3">
                         <select class="form-control eqLogicAttr" data-l1key="object_id">
                             <option value="">{{Aucun}}</option>
@@ -39,13 +39,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-2 control-label" ></label>
-					<div class="col-sm-10">
-					<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="isEnable" checked/>Activer</label>
-					<label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>Visible</label>
-					</div>
+                    <label class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-label-text="{{Activer}}" data-l1key="isEnable" checked />Activer</label>
+                        <label class="checkbox-inline"><input type="checkbox" class="eqLogicAttr" data-label-text="{{Visible}}" data-l1key="isVisible" checked />Visible</label>
+                    </div>
                 </div>
-            </fieldset> 
+            </fieldset>
         </form>
 
         <legend>{{Indicateurs}}</legend>

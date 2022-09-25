@@ -20,56 +20,47 @@
 require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 
 class ipx800v2_analogique extends eqLogic {
-    /*     * *************************Attributs****************************** */
+	/*     * *************************Attributs****************************** */
 
-    /*     * ***********************Methode static*************************** */
-	public function preUpdate()
-	{
-        $brut = $this->getCmd(null, 'voltage');
-        if ( is_object($brut) ) {
+	/*     * ***********************Methode static*************************** */
+	public function preUpdate() {
+		$brut = $this->getCmd(null, 'voltage');
+		if (is_object($brut)) {
 			$brut->setLogicalId('brut');
 			$brut->save();
 		} else {
 			$brut = $this->getCmd(null, 'brut');
 		}
-        $brut = $this->getCmd(null, 'brut');
-        if ( ! is_object($brut) ) {
-            $brut = new ipx800_analogiqueCmd();
+		$brut = $this->getCmd(null, 'brut');
+		if (!is_object($brut)) {
+			$brut = new ipx800v2_analogiqueCmd();
 			$brut->setName('Brut');
 			$brut->setEqLogic_id($this->getId());
 			$brut->setType('info');
 			$brut->setSubType('numeric');
 			$brut->setLogicalId('brut');
 			$brut->setIsVisible(0);
-			$brut->setEventOnly(1);
-			$brut->setDisplay('generic_type','GENERIC_INFO');
+			$brut->setDisplay('generic_type', 'GENERIC_INFO');
 			$brut->save();
-		}
-		else
-		{
-			if ( $brut->getDisplay('generic_type') == "" )
-			{
-				$brut->setDisplay('generic_type','GENERIC_INFO');
+		} else {
+			if ($brut->getDisplay('generic_type') == "") {
+				$brut->setDisplay('generic_type', 'GENERIC_INFO');
 				$brut->save();
 			}
 		}
-        $reel = $this->getCmd(null, 'reel');
-        if ( ! is_object($reel) ) {
-            $reel = new ipx800v2_analogiqueCmd();
+		$reel = $this->getCmd(null, 'reel');
+		if (!is_object($reel)) {
+			$reel = new ipx800v2_analogiqueCmd();
 			$reel->setName('Réel');
 			$reel->setEqLogic_id($this->getId());
 			$reel->setType('info');
 			$reel->setSubType('numeric');
 			$reel->setLogicalId('reel');
-			$reel->setEventOnly(1);
 			$reel->setConfiguration('calcul', '#' . $brut->getId() . '#');
-			$reel->setDisplay('generic_type','GENERIC_INFO');
+			$reel->setDisplay('generic_type', 'GENERIC_INFO');
 			$reel->save();
-		}
-		else
-		{
-			if ( $reel->getConfiguration('type') == "" )
-			{
+		} else {
+			if ($reel->getConfiguration('type') == "") {
 				switch ($reel->getConfiguration('calcul')) {
 					case '#brut# * 0.323':
 						$reel->setConfiguration('type', 'LM35Z');
@@ -102,7 +93,7 @@ class ipx800v2_analogique extends eqLogic {
 						$reel->setConfiguration('type', 'Ph');
 						break;
 					default:
-						if ( preg_match('!\( \( #brut# \* 0.00323 / 3.3 \) - 0.1515 \) / 0.00636 / \( 1.0546 - \( 0.00216 \* .* \) \)!', $reel->getConfiguration('calcul')) )
+						if (preg_match('!\( \( #brut# \* 0.00323 / 3.3 \) - 0.1515 \) / 0.00636 / \( 1.0546 - \( 0.00216 \* .* \) \)!', $reel->getConfiguration('calcul')))
 							$reel->setConfiguration('type', 'SHT-X3HC');
 						else
 							$reel->setConfiguration('type', 'Autre');
@@ -111,145 +102,141 @@ class ipx800v2_analogique extends eqLogic {
 			}
 			switch ($reel->getConfiguration('type')) {
 				case 'LM35Z':
-					$reel->setDisplay('generic_type','TEMPERATURE');
+					$reel->setDisplay('generic_type', 'TEMPERATURE');
 					break;
 				case 'T4012':
-					$reel->setDisplay('generic_type','TEMPERATURE');
+					$reel->setDisplay('generic_type', 'TEMPERATURE');
 					break;
 				case 'Voltage':
-					$reel->setDisplay('generic_type','VOLTAGE');
+					$reel->setDisplay('generic_type', 'VOLTAGE');
 					break;
 				case 'SHT-X3L':
-					$reel->setDisplay('generic_type','BRIGHTNESS');
+					$reel->setDisplay('generic_type', 'BRIGHTNESS');
 					break;
 				case 'SHT-X3T':
 					$reel->setTemplate('dashboard', 'thermometre');
 					$reel->setTemplate('mobile', 'thermometre');
-					$reel->setDisplay('generic_type','TEMPERATURE');
+					$reel->setDisplay('generic_type', 'TEMPERATURE');
 					break;
 				case 'SHT-X3H':
-					$reel->setDisplay('generic_type','HUMIDITY');
+					$reel->setDisplay('generic_type', 'HUMIDITY');
 					break;
 				case 'TC100':
 					$reel->setTemplate('dashboard', 'thermometre');
 					$reel->setTemplate('mobile', 'thermometre');
-					$reel->setDisplay('generic_type','TEMPERATURE');
+					$reel->setDisplay('generic_type', 'TEMPERATURE');
 					break;
 				case 'X400 CT10A':
-					$reel->setDisplay('generic_type','CONSUMPTION');
+					$reel->setDisplay('generic_type', 'CONSUMPTION');
 					break;
 				case 'CT20A':
-					$reel->setDisplay('generic_type','CONSUMPTION');
+					$reel->setDisplay('generic_type', 'CONSUMPTION');
 					break;
 				case 'CT50A':
-					$reel->setDisplay('generic_type','CONSUMPTION');
+					$reel->setDisplay('generic_type', 'CONSUMPTION');
 					break;
 				case 'Ph':
-					$reel->setDisplay('generic_type','GENERIC_INFO');
+					$reel->setDisplay('generic_type', 'GENERIC_INFO');
 					break;
 				case 'SHT-X3HC':
-					$reel->setDisplay('generic_type','HUMIDITY');
+					$reel->setDisplay('generic_type', 'HUMIDITY');
 					break;
 				default:
-					$reel->setDisplay('generic_type','GENERIC_INFO');
+					$reel->setDisplay('generic_type', 'GENERIC_INFO');
 					break;
 			}
 			$reel->save();
 		}
 	}
-	public function postInsert()
-	{
-        $brut = $this->getCmd(null, 'brut');
-        if ( ! is_object($brut) ) {
-            $brut = new ipx800v2_analogiqueCmd();
+	public function postInsert() {
+		$brut = $this->getCmd(null, 'brut');
+		if (!is_object($brut)) {
+			$brut = new ipx800v2_analogiqueCmd();
 			$brut->setName('Brut');
 			$brut->setEqLogic_id($this->getId());
 			$brut->setType('info');
 			$brut->setSubType('numeric');
 			$brut->setLogicalId('brut');
 			$brut->setIsVisible(0);
-			$brut->setDisplay('generic_type','GENERIC_INFO');
+			$brut->setDisplay('generic_type', 'GENERIC_INFO');
 			$brut->save();
 		}
-        $reel = $this->getCmd(null, 'reel');
-        if ( ! is_object($reel) ) {
-            $reel = new ipx800v2_analogiqueCmd();
+		$reel = $this->getCmd(null, 'reel');
+		if (!is_object($reel)) {
+			$reel = new ipx800v2_analogiqueCmd();
 			$reel->setName('Réel');
 			$reel->setEqLogic_id($this->getId());
 			$reel->setType('info');
 			$reel->setSubType('numeric');
 			$reel->setLogicalId('reel');
-			$reel->setEventOnly(1);
 			$reel->setConfiguration('calcul', '#' . $brut->getId() . '#');
-			$reel->setDisplay('generic_type','GENERIC_INFO');
+			$reel->setDisplay('generic_type', 'GENERIC_INFO');
 			$reel->save();
 		}
 	}
 
-	public function preInsert()
-	{
-		$gceid = substr($this->getLogicalId(), strpos($this->getLogicalId(),"_")+2);
+	public function preInsert() {
+		$gceid = substr($this->getLogicalId(), strpos($this->getLogicalId(), "_") + 2);
 		$this->setEqType_name('ipx800v2_analogique');
 		$this->setIsEnable(0);
 		$this->setIsVisible(0);
 	}
 
-    public static function event() {
-        $cmd = ipx800v2_analogiqueCmd::byId(init('id'));
-        if (!is_object($cmd)) {
-            throw new Exception('Commande ID virtuel inconnu : ' . init('id'));
-        }
+	public static function event() {
+		$cmd = ipx800v2_analogiqueCmd::byId(init('id'));
+		if (!is_object($cmd)) {
+			throw new Exception('Commande ID virtuel inconnu : ' . init('id'));
+		}
 		if ($cmd->execCmd() != $cmd->formatValue(init('voltage'))) {
 			$cmd->setCollectDate('');
 			$cmd->event(init('voltage'));
 		}
-    }
+	}
 
-    public function getLinkToConfiguration() {
-        return 'index.php?v=d&p=ipx800v2&m=ipx800v2&id=' . $this->getId();
-    }
-    /*     * **********************Getteur Setteur*************************** */
+	public function getLinkToConfiguration() {
+		return 'index.php?v=d&p=ipx800v2&m=ipx800v2&id=' . $this->getId();
+	}
+	/*     * **********************Getteur Setteur*************************** */
 }
 
-class ipx800v2_analogiqueCmd extends cmd 
-{
-    /*     * *************************Attributs****************************** */
+class ipx800v2_analogiqueCmd extends cmd {
+	/*     * *************************Attributs****************************** */
 
 
-    /*     * ***********************Methode static*************************** */
+	/*     * ***********************Methode static*************************** */
 
-    /*     * *********************Methode d'instance************************* */
+	/*     * *********************Methode d'instance************************* */
 
-    /*     * **********************Getteur Setteur*************************** */
-    public function preSave() {
-        if ( $this->getLogicalId() == 'reel' ) {
-            $this->setValue('');
-            $calcul = $this->getConfiguration('calcul');
-            preg_match_all("/#([0-9]*)#/", $calcul, $matches);
-            $value = '';
-            foreach ($matches[1] as $cmd_id) {
-                if (is_numeric($cmd_id)) {
-                    $cmd = self::byId($cmd_id);
-                    if (is_object($cmd) && $cmd->getType() == 'info') {
-                        $value .= '#' . $cmd_id . '#';
-                        break;
-                    }
-                }
-            }
+	/*     * **********************Getteur Setteur*************************** */
+	public function preSave() {
+		if ($this->getLogicalId() == 'reel') {
+			$this->setValue('');
+			$calcul = $this->getConfiguration('calcul');
+			preg_match_all("/#([0-9]*)#/", $calcul, $matches);
+			$value = '';
+			foreach ($matches[1] as $cmd_id) {
+				if (is_numeric($cmd_id)) {
+					$cmd = self::byId($cmd_id);
+					if (is_object($cmd) && $cmd->getType() == 'info') {
+						$value .= '#' . $cmd_id . '#';
+						break;
+					}
+				}
+			}
 			$this->setConfiguration('calcul', $calcul);
-			
-            $this->setValue($value);
-        }
-    }
 
-    public function execute($_options = null) {
-        if ($this->getLogicalId() == 'reel') {
+			$this->setValue($value);
+		}
+	}
+
+	public function execute($_options = null) {
+		if ($this->getLogicalId() == 'reel') {
 			try {
 				$calcul = $this->getConfiguration('calcul');
-				if ( preg_match("/#brut#/", $calcul) ) {
+				if (preg_match("/#brut#/", $calcul)) {
 					$EqLogic = $this->getEqLogic();
 					$brut = $EqLogic->getCmd(null, 'brut');
-					$calcul = preg_replace("/#brut#/", "#".$brut->getId()."#", $calcul);
+					$calcul = preg_replace("/#brut#/", "#" . $brut->getId() . "#", $calcul);
 				}
 				$calcul = scenarioExpression::setTags($calcul);
 				$result = evaluate($calcul);
@@ -268,21 +255,19 @@ class ipx800v2_analogiqueCmd extends cmd
 				return $result;
 			} catch (Exception $e) {
 				$EqLogic = $this->getEqLogic();
-				log::add('ipx800v2', 'error', $EqLogic->getName()." error in ".$this->getConfiguration('calcul')." : ".$e->getMessage());
+				log::add('ipx800v2', 'error', $EqLogic->getName() . " error in " . $this->getConfiguration('calcul') . " : " . $e->getMessage());
 				return scenarioExpression::setTags(str_replace('"', '', cmd::cmdToValue($this->getConfiguration('calcul'))));
 			}
 		} else {
 			return $this->getConfiguration('value');
 		}
-    }
+	}
 
-    public function imperihomeCmd() {
- 		if ( $this->getLogicalId() == 'reel' ) {
+	public function imperihomeCmd() {
+		if ($this->getLogicalId() == 'reel') {
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
-    }
+	}
 }
-?>
